@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>Reserveren</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="content">
+        <form name="Reserveren" class="form" method="POST">
+            <h4>Reservering Invoeren</h4>
+            <label for="date">Datum</label>
+            <input type="date" required name="datum"  />
+            <br>
+            <label for="tijd">Tijd</label>
+            <input type="time" name="tijd" min="09:00" max="20:00" required>
+            <br>
+            <label for="tafel">Tafel</label>
+            <input type="number" required name="tafel" placeholder="1-20" />
+            <br>
+            <label for="aantal">Aantal</label>
+            <input type="number" name="aantal" placeholder="Vul aantal persoon in" />
+            <br>
+            <label for="klantnaam">Klantnaam</label>
+            <input type="text" required name="klantnaam" placeholder="klantnaam" />
+            <br>
+            <label for="telefoonnummer">Telefoonnummer</label>
+            <input type="number" required name="telefoonnummer" placeholder="0612345678" />
+            <br>
+            <label for="email">Email</label>
+            <input type="email" name="email" placeholder="email" />
+            <br>
+            <label for="allergieen">Allergieen</label>
+            <input type="text" name="allergieen" placeholder="allergieen" />
+            <br>
+            <label for="opmerkingen">Opmerkingen</label>
+            <input type="text" name="opmerkingen" placeholder="opmerkingen" />
+            <br>
+            <input type="submit" class="icon" id="submit" name="Reserveren" value="Reserveren" />
+        </form>
+    </div>
+</body>
+
+</html>
